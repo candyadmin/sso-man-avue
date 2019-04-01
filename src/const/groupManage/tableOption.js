@@ -25,6 +25,8 @@ export default {
     tip: '这是集团id提示',
     width: 120,
     placeholder: '自定义输入placeholder',
+    editDisabled: true,
+    type: 'number',
     rules: [{
       required: true,
       message: "请输入集团id",
