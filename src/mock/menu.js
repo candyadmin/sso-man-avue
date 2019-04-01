@@ -1,9 +1,9 @@
 import Mock from 'mockjs'
 
 /**
- * 
+ *
  * 动态模拟菜单
- * 
+ *
  * label菜单的名字
  * path菜单的路径
  * icon菜单的图标（系统采用的阿里巴巴图表库）
@@ -233,6 +233,15 @@ const first = [{
     icon: 'icon-biaodan',
     meta: {},
     children: []
+},{
+  id: 12,
+  label: "集团管理",
+  path: '/groupManage',
+  component: 'views/groupManage/index',
+  icon: 'icon-biaodan',
+  meta: {},
+  children: []
+
 }]
 const second = [{
     id: 15,
