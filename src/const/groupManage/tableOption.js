@@ -19,20 +19,21 @@ export default {
   //   order: 'descending'
   // },
   dicData: DIC,
-  column: [{
-    label: "集团id",
-    prop: "id",
-    tip: '这是集团id提示',
-    width: 120,
-    placeholder: '自定义输入placeholder',
-    editDisabled: true,
-    type: 'number',
-    rules: [{
-      required: true,
-      message: "请输入集团id",
-      trigger: "blur"
-    }]
-  },
+  column: [
+  //   {
+  //   label: "集团id",
+  //   prop: "id",
+  //   tip: '这是集团id提示',
+  //   width: 120,
+  //   placeholder: '自定义输入placeholder',
+  //   editDisabled: true,
+  //   type: 'number',
+  //   rules: [{
+  //     required: true,
+  //     message: "请输入集团id",
+  //     trigger: "blur"
+  //   }]
+  // },
     {
       label: "集团名称",
       prop: "name",
@@ -53,6 +54,8 @@ export default {
       sortable: true,
       addDisabled: false,
       formsolt: true,
+      hide: true,
+
     },
     {
       label: "启用状态",
@@ -71,7 +74,8 @@ export default {
       valueFormat: "yyyy-MM-dd'T'hh:mm:ss",
       hide: true,
       format: "yyyy-MM-dd'T'hh:mm:ss",
-
+      valueDefault: new Date(),
+      editDisabled: true,
     },
     {
       label: "修改时间",
@@ -80,6 +84,8 @@ export default {
       valueFormat: "yyyy-MM-dd'T'hh:mm:ss",
       hide: true,
       format: "yyyy-MM-dd'T'hh:mm:ss",
+      valueDefault: new Date(),
+      editDisabled: true,
     }
   ]
 };
